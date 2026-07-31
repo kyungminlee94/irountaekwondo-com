@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/notice-01.html", "destination": "/notice/01.html", "permanent": true },
+    { "source": "/notice-02.html", "destination": "/notice/02.html", "permanent": true },
+    { "source": "/notice-03.html", "destination": "/notice/03.html", "permanent": true },
+    { "source": "/notice-04.html", "destination": "/notice/04.html", "permanent": true },
+    { "source": "/notice-05.html", "destination": "/notice/05.html", "permanent": true },
+    { "source": "/notice-06.html", "destination": "/notice/06.html", "permanent": true }
+  ]
+}
