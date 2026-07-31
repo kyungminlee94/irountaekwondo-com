@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>수업문의 - 아이로운 태권도장</title>
+<meta name="description" content="아이로운 태권도장 수업문의 및 상담 신청">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="" class="logo-mark">아이로운<span>태권도</span></a>
+    <nav class="nav" id="nav">
+      <a href="pricing.html">수강료</a>
+      <a href="gallery.html">수업사례</a>
+      <a href="review.html">후기</a>
+      <a href="notice.html">공지사항</a>
+      <a href="location.html">오시는 길</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-eyebrow">INQUIRY</p>
+    <h1>수업문의</h1>
+    <p class="page-hero-desc">아래 정보를 남겨주시면 확인 후 빠르게 연락드리겠습니다.</p>
+  </div>
+</section>
+
+<!-- Inquiry Form -->
+<section class="section">
+  <div class="container">
+    <form class="inquiry-form" id="inquiryForm">
+      <div class="form-row">
+        <div class="form-label">이름<span class="required">*</span></div>
+        <div class="form-field">
+          <input type="text" id="f_name" name="f_name" placeholder="학생 이름을 입력해주세요" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">나이<span class="required">*</span></div>
+        <div class="form-field">
+          <input type="number" id="f_age" name="f_age" placeholder="만 나이" min="1" max="19" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">연락처<span class="required">*</span></div>
+        <div class="form-field">
+          <input type="tel" id="f_phone" name="f_phone" placeholder="010-1234-5678" pattern="[0-9\-]{9,13}" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">희망시간<span class="required">*</span></div>
+        <div class="form-field">
+          <select id="f_time" name="f_time" required>
+            <option value="" disabled selected>선택해주세요</option>
+            <option value="1부 (2:00~2:50) 초등부 1,2학년">1부 (2:00~2:50) 초등부 1,2학년</option>
+            <option value="2부 (3:30~4:20) 유치부/초등부 저학년">2부 (3:30~4:20) 유치부/초등부 저학년</option>
+            <option value="3부 (5:00~5:50) 유치부/초등부 저학년">3부 (5:00~5:50) 유치부/초등부 저학년</option>
+            <option value="4부 (6:30~7:20) 초등부 고학년/유품자">4부 (6:30~7:20) 초등부 고학년/유품자</option>
+            <option value="5부 (8:00~8:50) 중,고등부">5부 (8:00~8:50) 중,고등부</option>
+            <option value="상담 후 결정">상담 후 결정할게요</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">픽업여부<span class="required">*</span></div>
+        <div class="form-field">
+          <div class="radio-group">
+            <label><input type="radio" name="f_pickup" value="픽업 필요" required> 필요</label>
+            <label><input type="radio" name="f_pickup" value="픽업 불필요" required> 불필요</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">전달사항</div>
+        <div class="form-field">
+          <textarea id="f_message" name="f_message" placeholder="궁금하신 점이나 전달하실 내용을 자유롭게 남겨주세요 (선택)"></textarea>
+        </div>
+      </div>
+      <label class="form-consent">
+        <input type="checkbox" required>
+        <span>(필수) 입력하신 정보는 상담 목적으로만 사용되며, 별도로 저장되지 않고 문의 접수를 위해 바로 전송됩니다.</span>
+      </label>
+      <div class="form-submit-wrap">
+        <button type="submit" class="btn btn-primary btn-lg">상담 신청하기</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Floating Contact Button -->
+<a href="tel:031-846-6969" class="floating-contact" aria-label="수업문의 전화하기">
+  <span class="floating-contact-ring"></span>
+  <span class="floating-contact-icon">🥋</span>
+  <span class="floating-contact-text">수업문의</span>
+</a>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">아이로운<span>태권도</span></div>
+    <p>경기 양주시 삼숭로38번길 80 1 자이아파트 프라자 1상가 주민자치센터건물 2층</p>
+    <p>전화 031-846-6969</p>
+    <p class="footer-copy">&copy; 2026 아이로운 태권도장. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/inquiry.js"></script>
+</body>
+</html>
