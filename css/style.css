@@ -813,7 +813,7 @@ img { max-width: 100%; display: block; }
 .faq-answer {
   display: flex;
   gap: 16px;
-  padding: 0 28px 26px;
+  padding: 26px 28px;
   color: var(--gray);
   font-size: 15px;
   line-height: 1.8;
@@ -821,7 +821,7 @@ img { max-width: 100%; display: block; }
 .faq-answer .faq-a-mark { flex: 0 0 auto; color: var(--pink); font-weight: 700; }
 @media (max-width: 720px) {
   .faq-question { padding: 18px 20px; font-size: 15px; }
-  .faq-answer { padding: 0 20px 22px; font-size: 14.5px; }
+  .faq-answer { padding: 22px 20px; font-size: 14.5px; }
 }
 
 /* ===== Floating Contact Button ===== */
