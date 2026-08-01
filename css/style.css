@@ -643,11 +643,12 @@ img { max-width: 100%; display: block; }
 @media (max-width: 720px) {
   .review-card { flex-direction: column; gap: 16px; }
   .review-head {
+    flex-basis: auto;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     column-gap: 14px;
-    row-gap: 10px;
+    row-gap: 5px;
     align-items: center;
   }
   .review-avatar { grid-row: 1; grid-column: 1; }
