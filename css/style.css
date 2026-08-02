@@ -947,7 +947,7 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 480px) {
-  .popup-overlay { top: 20px; left: 20px; }
+  .popup-overlay { top: 20px; left: 50%; transform: translateX(-50%); }
 }
 .popup-image { width: 100%; display: block; }
 .popup-close {
