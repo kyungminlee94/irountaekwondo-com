@@ -915,3 +915,56 @@ img { max-width: 100%; display: block; }
   .hero-content { padding: 70px 24px; }
   .hero-actions .btn { width: 100%; }
 }
+
+/* ===== Popup Banner ===== */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 16, 20, 0.65);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.popup-banner {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+.popup-image { width: 100%; display: block; }
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.popup-footer {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid var(--gray-light);
+}
+.popup-hide-today {
+  background: none;
+  border: none;
+  color: var(--gray);
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}

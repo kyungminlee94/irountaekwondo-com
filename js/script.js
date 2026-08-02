@@ -88,3 +88,26 @@ if (reviewList) {
     showPage(1);
   }
 }
+
+// Popup banner (홈 화면 공지 배너)
+const popupOverlay = document.getElementById('popupOverlay');
+
+if (popupOverlay) {
+  const hideUntil = localStorage.getItem('hidePopupUntil');
+  if (hideUntil && new Date() < new Date(hideUntil)) {
+    popupOverlay.style.display = 'none';
+  } else {
+    document.getElementById('popupClose').addEventListener('click', () => {
+      popupOverlay.style.display = 'none';
+    });
+    document.getElementById('popupHideToday').addEventListener('click', () => {
+      const midnight = new Date();
+      midnight.setHours(24, 0, 0, 0);
+      localStorage.setItem('hidePopupUntil', midnight.toISOString());
+      popupOverlay.style.display = 'none';
+    });
+    popupOverlay.addEventListener('click', (e) => {
+      if (e.target === popupOverlay) popupOverlay.style.display = 'none';
+    });
+  }
+}
