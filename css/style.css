@@ -296,7 +296,7 @@ img { max-width: 100%; display: block; }
   transition: transform 0.25s ease;
 }
 .about-card:hover { transform: translateY(-6px); }
-.about-icon { font-size: 34px; margin-bottom: 16px; }
+.about-icon { width: 64px; height: 64px; margin-bottom: 16px; }
 .about-card h3 { font-size: 18px; margin-bottom: 10px; }
 .about-card p { color: var(--gray); font-size: 14.5px; }
 
