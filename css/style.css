@@ -305,7 +305,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 10px;
 }
 .about-card h3 { font-size: 21px; margin-bottom: 10px; }
-.about-card p { color: var(--gray); font-size: 14.5px; margin-bottom: 18px; }
+.about-card p { color: var(--gray); font-size: 14.5px; line-height: 1.6; min-height: 3.2em; margin-bottom: 18px; }
 .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .about-tag {
   background: #f3f4f8;
