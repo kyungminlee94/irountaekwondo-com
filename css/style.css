@@ -706,6 +706,7 @@ img { max-width: 100%; display: block; }
 .review-preview-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 .review-preview-card .review-headline { margin-bottom: 10px; }
 .review-preview-card .review-text { margin-bottom: 14px; }
+.review-preview-card .review-meta { margin-top: auto; }
 @media (max-width: 900px) {
   .review-preview-grid { grid-template-columns: 1fr; }
 }
