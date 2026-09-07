@@ -114,6 +114,15 @@ img { max-width: 100%; display: block; }
 }
 .nav a:hover { color: var(--blue); }
 .nav a.active { color: var(--blue); }
+.nav a.nav-cta {
+  background: var(--pink);
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+}
+.nav a.nav-cta:hover { background: var(--pink-dark); color: #fff; }
+.nav a.nav-cta.active { color: #fff; }
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -630,6 +639,13 @@ img { max-width: 100%; display: block; }
 .form-consent input { margin-top: 3px; }
 .form-submit-wrap { padding: 24px 20px 28px; text-align: center; }
 .form-submit-wrap .btn { width: 100%; }
+.form-success {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-dark);
+}
 .form-note {
   text-align: center;
   color: var(--gray);
@@ -1024,6 +1040,7 @@ img { max-width: 100%; display: block; }
   }
   .nav.open { transform: translateY(0); }
   .nav a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .nav a.nav-cta { border-bottom: none; text-align: center; padding: 12px 0; margin-top: 8px; }
   .menu-toggle { display: flex; }
   .about-grid, .program-grid, .gallery-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }

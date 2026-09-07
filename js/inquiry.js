@@ -1,32 +1,34 @@
 const inquiryForm = document.getElementById('inquiryForm');
 
 if (inquiryForm) {
-  inquiryForm.addEventListener('submit', (e) => {
+  inquiryForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('f_name').value.trim();
-    const age = document.getElementById('f_age').value.trim();
-    const phone = document.getElementById('f_phone').value.trim();
-    const time = document.getElementById('f_time').value;
-    const pickup = inquiryForm.querySelector('input[name="f_pickup"]:checked');
-    const message = document.getElementById('f_message').value.trim();
+    const submitBtn = inquiryForm.querySelector('button[type="submit"]');
+    const successMsg = document.getElementById('formSuccess');
 
-    if (!pickup) {
-      alert('픽업여부를 선택해주세요.');
-      return;
+    submitBtn.disabled = true;
+    submitBtn.textContent = '전송 중...';
+
+    try {
+      const response = await fetch(inquiryForm.action, {
+        method: 'POST',
+        body: new FormData(inquiryForm),
+        headers: { Accept: 'application/json' }
+      });
+
+      if (response.ok) {
+        inquiryForm.reset();
+        inquiryForm.querySelectorAll('.form-row, .form-consent').forEach(el => { el.style.display = 'none'; });
+        submitBtn.style.display = 'none';
+        successMsg.hidden = false;
+      } else {
+        throw new Error('submit failed');
+      }
+    } catch (err) {
+      alert('전송에 실패했습니다. 전화(010-7633-8244)로 문의해 주세요.');
+      submitBtn.disabled = false;
+      submitBtn.textContent = '상담 신청하기';
     }
-
-    const subject = `[아이로운태권도] 수업문의 - ${name}`;
-    const body = [
-      `이름: ${name}`,
-      `나이: ${age}세`,
-      `연락처: ${phone}`,
-      `희망시간: ${time}`,
-      `픽업여부: ${pickup.value}`,
-      `전달사항: ${message || '(없음)'}`
-    ].join('\n');
-
-    const mailto = `mailto:kyungmin3458@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
   });
 }
