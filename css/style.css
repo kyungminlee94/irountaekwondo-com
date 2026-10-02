@@ -789,7 +789,8 @@ img { max-width: 100%; display: block; }
 .notice-preview-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
   transition: transform 0.35s ease;
 }
 .notice-preview-card:hover .notice-preview-thumb img { transform: scale(1.06); }
