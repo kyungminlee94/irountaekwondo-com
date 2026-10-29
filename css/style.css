@@ -1160,6 +1160,10 @@ img { max-width: 100%; display: block; }
 .enroll-highlight .section-lead {
   text-align: center;
 }
+.enroll-highlight .section-lead {
+  margin-left: auto;
+  margin-right: auto;
+}
 .enroll-highlight .about-tags {
   justify-content: center;
   margin: 20px 0 28px;
