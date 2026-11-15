@@ -871,6 +871,18 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow);
   padding: 8px 28px;
 }
+.notice-detail-message {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 28px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--black);
+}
+.notice-detail-message p { margin-bottom: 18px; }
+.notice-detail-message p:last-child { margin-bottom: 0; }
+.notice-detail-message strong { font-weight: 900; }
 .notice-detail-banner {
   background: linear-gradient(135deg, var(--pink) 0%, var(--blue) 100%);
   padding: 64px 32px;
